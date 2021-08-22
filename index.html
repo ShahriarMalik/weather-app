@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="weather-icons.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <section class="main">
+      <div class="location-by-search">
+        <input
+          type="text"
+          class="city-search"
+          id="autocomplete"
+          placeholder="Enter Location"
+        />
+      </div>
+      <div class="location">
+        <div class="location-by-detection">
+          <h2 class="specific-location"></h2>
+          <h3 class="city-location"></h3>
+        </div>
+        <div class="time-zone">
+          <div class="time-zone__titile">
+            <h2>Current Weather</h2>
+          </div>
+          <div class="time-div"></div>
+        </div>
+      </div>
+      <div class="temperature">
+        <div class="temperature-unit">
+          <h1>
+            <span class="temperature-unit_value">34</span>
+            <span class="celcius celcius-unit active">°C</span> |
+            <span class="farenheit farenheit-unit">°F</span>
+          </h1>
+        </div>
+
+        <div class="icon">
+          <!-- <i id="icon" class="wi wi-owm-500"></i> -->
+        </div>
+      </div>
+      <div class="weather-description">
+        <h2 class="weather-main">Rain</h2>
+        <h4>
+          Forcast for <span class="description">rain</span>. The high will be
+          <span class="temperature_max">22</span>
+          <span class="celcius unit">°C </span> and low will be
+          <span class="temperature_min">8</span>
+          <span class="celcius unit">°C</span>.
+        </h4>
+      </div>
+      <div class="weather-info">
+        <div class="weather-info__feelsLike">
+          <div>
+            <h3 class="weather-info_title">
+              <i class="wi wi-thermometer"></i> Feels Like
+            </h3>
+          </div>
+          <div>
+            <h3 class="weather-info__feelsLike_value">
+              <span class="temp_feelsLike">22</span>
+              <span class="celcius unit"> °C </span>
+            </h3>
+          </div>
+        </div>
+        <div class="weather-info__wind">
+          <h3 class="weather-info_title">
+            <i class="wi wi-strong-wind"></i> Wind
+          </h3>
+          <h3 class="weather-info__wind_value">
+            <span class="wind-speed"> 18 </span>
+            <span class="speed-unit">km</span>/h
+          </h3>
+        </div>
+        <div class="weather-info__humidity">
+          <h3 class="weather-info_title">
+            <i class="wi wi-humidity"></i> Humidity
+          </h3>
+          <h3 class="weather-info__wind_value">
+            <span class="humidity"> 73 </span> %
+          </h3>
+        </div>
+      </div>
+    </section>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=your-api-key&libraries=places&callback=initAutocomplete"
+    ></script>
+  </body>
+</html>

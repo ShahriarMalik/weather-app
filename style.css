@@ -1,0 +1,212 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 8rem;
+  max-width: 35rem;
+  padding: 1rem;
+  /* height: 100vh; */
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+}
+.city-search {
+  outline: none;
+}
+.location-by-search {
+  margin-bottom: 1rem;
+}
+
+.time-zone {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .main {
+    width: 95vw;
+  }
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.time-zone {
+  align-self: center;
+}
+input[type="text"] {
+  padding: 6px;
+  border: none;
+  width: 40%;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 476px) {
+  .location-by-search {
+    margin-top: 0.5rem;
+  }
+}
+
+.temperature {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1.5px solid black; */
+}
+
+.temperature-unit_value {
+  font-size: 3rem;
+}
+
+.celcius-unit {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.celcius-unit,
+.farenheit-unit {
+  cursor: pointer;
+}
+.farenheit-unit {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.active {
+  font-size: 2rem;
+  cursor: auto;
+}
+
+.temperature-unit {
+  align-self: center;
+}
+.icon img {
+  align-items: center;
+}
+
+.weather-description {
+  margin: 2rem 0;
+}
+.weather-info {
+  display: flex;
+  /* margin-top: 1rem; */
+  justify-content: space-around;
+}
+
+.weather-info__feelsLike,
+.weather-info__wind,
+.weather-info__humidity {
+  display: flex;
+  /* align-content: center; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media screen and (max-width: 480px) {
+  .main {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  input[type="text"] {
+    width: 70%;
+    font-size: 1rem;
+  }
+  .temperature {
+    margin: 2rem 0;
+
+    /* border: 1.5px solid black; */
+  }
+  .time-zone {
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  input[type="text"] {
+    width: 60%;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 476px) {
+  .location-by-search {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .main {
+    margin: 3rem auto;
+  }
+}
+
+/* ********* Google seacrh box ********* */
+
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: Roboto;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.pac-icon {
+  display: none;
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+#target {
+  width: 345px;
+}
