@@ -12,4 +12,4 @@ Here is link [https://youtu.be/L1DWtew3fGI]
 
 - [weather icon](https://github.com/erikflowers/weather-icons)
 - [OpenWeather API](https://openweathermap.org/api)
-- [Mapquest](https://developer.mapquest.com/)
+- [Mapquest API](https://developer.mapquest.com/)
